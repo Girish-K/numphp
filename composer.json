@@ -1,6 +1,8 @@
 {
     "name": "girishk/numphp",
     "description": "Numphp is a PHP package for statitical computations",
+	"keywords": ["php", "mean", "standard deviation", "percentile", "zscore"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Girish Kapileswarapu",
