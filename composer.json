@@ -8,12 +8,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-		"php": ">=5.0.0"
-	},
+    "require": {},
 	"autoload": {
-        "psr-0": {
-            "Numphp": "src/"
+        "psr-4": {
+            "girishk\\": "src/"
         }
     }
 }
