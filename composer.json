@@ -1,0 +1,19 @@
+{
+    "name": "girishk/numphp",
+    "description": "Numphp is a PHP package for statitical computations",
+    "authors": [
+        {
+            "name": "Girish Kapileswarapu",
+            "email": "girish.kapileswarapu138@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=5.0.0"
+	},
+	"autoload": {
+        "psr-0": {
+            "Numphp": "src/"
+        }
+    }
+}
