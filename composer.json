@@ -13,7 +13,15 @@
     "require": {},
 	"autoload": {
         "psr-4": {
-            "girishk\\": "src/"
+            "Girishk\\": "src/"
         }
-    }
+    },
+	"extra": {
+		"laravel": {
+			"providers": ["Girishk\\Providers\\Laravel\\NumphpServiceProvider"],
+            "aliases": {
+                "Numphp": "Girishk\\Facades\\NumphpFacade"
+            }
+		}
+	}
 }

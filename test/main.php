@@ -1,6 +1,6 @@
 <?php
 	require_once './../src/Numphp.php';
-	use girishk\Numphp;
+	use Girishk\Numphp;
 
 	$numpy = new Numphp();
 	echo $numpy->mean([1,2,3]);

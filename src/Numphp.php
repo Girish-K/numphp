@@ -4,7 +4,7 @@
  * @author Girish Kapileswarapu
  */
 
-namespace girishk;
+namespace Girishk;
 
 class Numphp
 {
