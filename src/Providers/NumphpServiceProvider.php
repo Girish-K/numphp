@@ -22,7 +22,7 @@ class NumphpServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(static::$key, function ($app) {
-		    return Numphp();
+		    return new Numphp();
         });
     }
 
