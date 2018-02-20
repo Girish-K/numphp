@@ -20,7 +20,7 @@ This module allows you to calculate mean, standard deviation, Z-score and percen
 
     'aliases' => array(
         // ...
-        'Numphp' => Girishk\Facades\NumphpFacade::class,
+        'Numphp' => Girishk\Facades\Numphp::class,
     )
     ```
 
@@ -30,5 +30,5 @@ This module allows you to calculate mean, standard deviation, Z-score and percen
 
    ```php
    $app->register(Girishk\Providers\NumphpServiceProvider::class);
-   $app->alias('Numphp', Girishk\Facades\NumphpFacade::class);
+   $app->alias('Numphp', Girishk\Facades\Numphp::class);
    ```
