@@ -1,6 +1,6 @@
 ## Num PHP
 
-This module allows you to calculate mean, standard deviation, Z-score and percentile.
+This module allows you to calculate mean, standard deviation, Z-score, percentile, sten and stanine.
 
 ### Installation
 

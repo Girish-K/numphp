@@ -8,6 +8,27 @@ namespace Girishk;
 
 class Numphp
 {
+	private $stenConstants = array(
+		'-1.5' => 2,
+		'-1.0' => 3,
+		'-0.5' => 4,
+		'0' => 5,
+		'0.5' => 6,
+		'1.0' => 7,
+		'1.5' => 8,
+		'2.0' => 9
+	);
+
+	private $stanineConstants = array(
+		'-1.25' => 2,
+		'-0.75' => 3,
+		'-0.25' => 4,
+		'0.25' => 5,
+		'0.75' => 6,
+		'1.25' => 7,
+		'1.75' => 8
+	);
+
 	public function mean($data = array())
 	{
 		if (count($data) == 0) {
@@ -87,5 +108,43 @@ class Numphp
 		$sqrErrorValue = 1 - exp($innerExpression);
 
 		return sqrt($sqrErrorValue);
+	}
+
+	public function sten($zScore)
+	{
+		if ($zScore < -2) {
+			return 1;
+		}
+
+		if ($zScore > 2) {
+			return 10;
+		}
+
+		foreach ($this->stenConstants as $limit => $value) {
+			if ((float)$limit > $zScore) {
+				return $value;
+			}
+		}
+
+		return 9;
+	}
+
+	public function stanine($zScore)
+	{
+		if ($zScore < -1.75) {
+			return 1;
+		}
+
+		if ($zScore > 1.75) {
+			return 9;
+		}
+
+		foreach ($this->stanineConstants as $limit => $value) {
+			if ((float)$limit > $zScore) {
+				return $value;
+			}
+		}
+
+		return 8;
 	}
 }
