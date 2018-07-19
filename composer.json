@@ -18,7 +18,7 @@
     },
 	"extra": {
 		"laravel": {
-			"providers": ["Girishk\\Providers\\Laravel\\NumphpServiceProvider"],
+			"providers": ["Girishk\\Providers\\NumphpServiceProvider"],
             "aliases": {
                 "Numphp": "Girishk\\Facades\\NumphpFacade"
             }
